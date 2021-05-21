@@ -14,7 +14,13 @@
      }),
      new VueLoaderPlugin(),
    ],
-   output: {
+   resolve:{
+    //配置别名，在项目中可缩减引用路径
+    alias: {
+       vue$: 'vue/dist/vue.esm.js',
+    }
+  },
+ output: {
      filename: '[name].[contenthash].js',
      path: path.resolve(__dirname, 'dist'),
      publicPath:'',

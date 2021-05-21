@@ -54,7 +54,6 @@ export default {
 }
 .ah{
     width:750px;
-    height:600px;
     font-family: 'webfont';
     background-color: red;
 }
